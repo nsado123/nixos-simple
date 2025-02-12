@@ -9,7 +9,7 @@
 
   # Information About the User
   home.username = "nsado";
-  home.homeDirectory = "home/nsado";
+  home.homeDirectory = "/home/nsado";
 
   # Version
   home.stateVersion = "24.11";
