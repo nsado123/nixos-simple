@@ -1,8 +1,8 @@
-{config, pkgs, ...}:
+{config, pkgs, stablepkgs, ...}:
 
 {
-  # Packages
-  home.packages = with pkgs; [
+  # Icons/Fonts
+  home.packages = with stablepkgs; [
     tela-circle-icon-theme
   ];
 
