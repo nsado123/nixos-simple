@@ -28,13 +28,13 @@
     ".config/" = {
       source = ../../sources/misc;
       recursive = true;
-      forced = true;
+      force = true;
     };
 
     ".config/scripts" = {
       source = ../../sources/scripts;
       recursive = true;
-      forced = true;
+      force = true;
     };
     
   };

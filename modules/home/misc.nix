@@ -2,24 +2,8 @@
 
 let
   # Vivaldi
-  vivaldi = pkgs.vivaldi.overrideAttrs (oldAttrs: {
-    dontWrapQtApps = false;
-    dontPatchELF = true;
-    nativeBuildInputs = oldAttrs.nativeBuildInputs ++ [ pkgs.kdeApplications.wrapQtAppsHook ];
-    postInstall = oldAttrs.postInstall + ''
-      wrapProgram $out/bin/vivaldi-stable \
-        --set NIXOS_OZONE_WL 1 \
-        --add-flags "
-          --ozone-platform=wayland
-          --enable-features=UseOzonePlatform
-          --enable-blink-features=MiddleClickAutoscroll
-          --enable-touchview
-        "
-    '';
-  });
-
   vivaldilst = [
-    (vivaldi.override {
+    (pkgs.vivaldi.override {
       proprietaryCodecs = true;
       enableWidevine = false;
     })

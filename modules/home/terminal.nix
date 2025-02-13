@@ -8,19 +8,19 @@
     ".config/fastfetch" = {
       source = ../../sources/fastfetch;
       recursive = true;
-      forced = true;
+      force = true;
     };
     # Kitty
     ".config/kitty" = {
       source = ../../sources/kitty;
       recursive = true;
-      forced = true;
+      force = true;
     };
     # Fish
     #".config/fish" = {
     #  source = ../../sources/fish;
     #  recursive = true;
-    #  forced = true;
+    #  force = true;
     #}
   };
 
@@ -36,7 +36,7 @@
     enable = true;
 
     # Aliases
-    ShellAliases = {
+    shellAliases = {
       l  = "eza -lh --icons=auto";
       ls = "eza -1 --icons=auto";
       ll = "eza -lha --icons=auto --sort=name --group-directories-first";

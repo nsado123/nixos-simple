@@ -29,16 +29,13 @@ let
     pipewire
     obsidian
     discord
-  ];
-
-  nurpkgslst = with nurpkgs; [
     waytrogen
   ];
 in
 
 {
   # Combined Package List
-  home.packages = pkgslst ++ nurpkgslst;
+  home.packages = pkgslst;
 
   # Import Modules
   imports = [

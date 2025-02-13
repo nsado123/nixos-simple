@@ -28,49 +28,49 @@ in
     ".config/uwsm" = {
       source = ../../sources/uwsm;
       recursive = true;
-      forced = true;
+      force = true;
     };
 
     # Hyprland
     ".config/hypr" = {
       source = ../../sources/hyprland;
       recursive = true;
-      forced = true;
+      force = true;
     };
 
     # Swaync
     ".config/swaync" = {
       source = ../../sources/swaync;
       recursive = true;
-      forced = true;
+      force = true;
     };
 
     # Swayosd
     ".config/swayosd" = {
       source = ../../sources/swayosd;
       recursive = true;
-      forced = true;
+      force = true;
     };
 
     # Wlogout
     ".config/wlogout" = {
       source = ../../sources/wlogout;
       recursive = true;
-      forced = true;
+      force = true;
     };
     
     # Rofi
     ".config/rofi" = {
       source = ../../sources/rofi;
       recursive = true;
-      forced = true;
+      force = true;
     };
 
     # Waybar
     ".config/waybar" = {
       source = ../../sources/waybar;
       recursive = true;
-      forced = true;
+      force = true;
     };
   };
 

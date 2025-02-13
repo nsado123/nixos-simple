@@ -8,17 +8,18 @@
 
   # Theme
   home.file = {
-    ".local/share/themes"
-    source = ../../sources/stylix/themes;
-    recursive = true;
-    forced = true;
+    ".local/share/themes" = {
+       source = ../../sources/stylix/themes;
+       recursive = true;
+       force = true;
+     };
   };
 
   # Enable Stylix
   stylix.enable = true;
 
   # Cattpuccin Theme
-  stylix.base16scheme = {
+  stylix.base16Scheme = {
     base00 = "1e1e2e";
     base01 = "181825";
     base02 = "313244";
@@ -38,7 +39,7 @@
   };
 
   # Set the wallpaper image
-  stylix.image = ../../source/stylix/wallpaper-1.png; # Replace with the path to your desired wallpaper
+  stylix.image = ../../sources/stylix/wallpaper-1.png; # Replace with the path to your desired wallpaper
 
   # Set the color scheme polarity
   stylix.polarity = "dark";
