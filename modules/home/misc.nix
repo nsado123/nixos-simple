@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, stablepkgs, ... }:
 
 let
   # Vivaldi
@@ -58,7 +58,7 @@ in
       pkgs.vscode-extensions.ms-vscode.cpptools-extension-pack
       # Rust
       pkgs.vscode-extensions.rust-lang.rust-analyzer
-      pkgs.vscode-extensions.vadimcn.vscode-lldb
+      stablepkgs.vscode-extensions.vadimcn.vscode-lldb
       pkgs.vscode-extensions.fill-labs.dependi
       # Github
       pkgs.vscode-extensions.github.copilot
@@ -74,5 +74,4 @@ in
       # Add other extensions as needed
     ];
   };
-
 }
