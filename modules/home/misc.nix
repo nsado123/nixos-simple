@@ -28,7 +28,7 @@ let
     (pkgs.spotify.overrideAttrs (oldAttrs: {
       postInstall = ''
         wrapProgram $out/bin/spotify \
-          --set=OZONE_PLATFORM=wayland \
+          --set OZONE_PLATFORM wayland \
           --add-flags="--ozone-platform=wayland"
       '';
     }))
