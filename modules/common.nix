@@ -44,4 +44,13 @@ in
     ./home/misc.nix
     ./home/theme.nix
   ];
+
+  home.file = {
+    # Scripts
+    ".config/scripts" = {
+      source = ../../sources/scripts;
+      recursive = true;
+      force = true;
+    };
+  };
 }
