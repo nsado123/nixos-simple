@@ -30,13 +30,5 @@
       recursive = true;
       force = true;
     };
-
-    ".config/scripts" = {
-      source = ../../sources/scripts;
-      recursive = true;
-      force = true;
-    };
-    
   };
-
 }
