@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, stablepkgs, ... }:
 
 {
 
@@ -11,11 +11,11 @@
       force = true;
     };
     # Kitty
-    ".config/kitty" = {
-      source = ../../sources/kitty;
-      recursive = true;
-      force = true;
-    };
+    #".config/kitty" = {
+    #  source = ../../sources/kitty;
+    #  recursive = true;
+    #  force = true;
+    #};
     # Fish
     #".config/fish" = {
     #  source = ../../sources/fish;

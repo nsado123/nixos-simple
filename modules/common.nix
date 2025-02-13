@@ -30,6 +30,7 @@ let
     obsidian
     discord
     waytrogen
+    mesa
   ];
 in
 
@@ -48,7 +49,7 @@ in
   home.file = {
     # Scripts
     ".config/scripts" = {
-      source = ../../sources/scripts;
+      source = .././sources/scripts;
       recursive = true;
       force = true;
     };
